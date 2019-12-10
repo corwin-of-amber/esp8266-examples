@@ -1,0 +1,9 @@
+- Connect GPIO0 low
+- Pulse RST low
+- make flash ESPPORT=/dev/...
+  e.g.  make flash ESPPORT=`echo /dev/cu.wchusbserial*`   for wch module
+
+- (to see serial output)
+  minicom -b 115200 -8 -o -D /dev/tty.wchusbserial*
+
+Note: esptool requires pyserial  (pip install pyserial)
